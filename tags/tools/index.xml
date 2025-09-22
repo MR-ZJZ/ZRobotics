@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tools on SonnyCalcr&#39;s Blog</title>
+    <link>http://localhost:1313/tags/tools/</link>
+    <description>Recent content in Tools on SonnyCalcr&#39;s Blog</description>
+    <image>
+      <title>SonnyCalcr&#39;s Blog</title>
+      <url>https://i.postimg.cc/7hwBy7VS/calcr.png</url>
+      <link>https://i.postimg.cc/7hwBy7VS/calcr.png</link>
+    </image>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>zh</language>
+    <copyright>©2024 SonnyCalcr&amp;rsquo;s Blog</copyright>
+    <lastBuildDate>Wed, 07 Aug 2024 01:45:10 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Set Themes for Kitty</title>
+      <link>http://localhost:1313/posts/how-to-set-themes-for-kitty/</link>
+      <pubDate>Wed, 07 Aug 2024 01:45:10 +0800</pubDate>
+      <guid>http://localhost:1313/posts/how-to-set-themes-for-kitty/</guid>
+      <description>&lt;p&gt;如何给 Kitty 设置主题呢？这个问题其实很简单，因为像这样成熟的 terminal 模拟器，必然有人在网上已经整理好了相关的 themes，通常只需要我们去 clone 一下就可以使用了。Kitty 就是如此。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

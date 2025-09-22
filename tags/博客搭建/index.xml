@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>博客搭建 on SonnyCalcr&#39;s Blog</title>
+    <link>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+    <description>Recent content in 博客搭建 on SonnyCalcr&#39;s Blog</description>
+    <image>
+      <title>SonnyCalcr&#39;s Blog</title>
+      <url>https://i.postimg.cc/7hwBy7VS/calcr.png</url>
+      <link>https://i.postimg.cc/7hwBy7VS/calcr.png</link>
+    </image>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>zh</language>
+    <copyright>©2024 SonnyCalcr&amp;rsquo;s Blog</copyright>
+    <lastBuildDate>Sun, 04 Aug 2024 03:25:53 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo &#43; PaperMod &#43; Github Pages 搭建一个完善的个人博客(以 Windows11 为例)</title>
+      <link>http://localhost:1313/posts/build-a-blog-using-hugo-papermod-github-pages/</link>
+      <pubDate>Sun, 04 Aug 2024 03:25:53 +0800</pubDate>
+      <guid>http://localhost:1313/posts/build-a-blog-using-hugo-papermod-github-pages/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;之前四五年的时间里也算写过五六百篇博客。以前的 Hexo 顶不住博客数量的压力了，所以，切到 Hugo 试一下。&lt;/p&gt;
+&lt;h3 id=&#34;涉及工具&#34;&gt;涉及工具&lt;/h3&gt;
+&lt;p&gt;除了搭建博客和介绍如何使用这个博客框架这样一个流程本身，还包含了对 PaperMod 这个主题的一些细节的定制。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
