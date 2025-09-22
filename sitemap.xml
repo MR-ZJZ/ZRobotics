@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.zrobotics.dpdns.org/categories/</loc>
+    <loc>http://localhost:1313/ZRobotics/categories/</loc>
     <lastmod>2025-09-12T03:25:53+08:00</lastmod>
   </url><url>
-    <loc>http://www.zrobotics.dpdns.org/posts/</loc>
+    <loc>http://localhost:1313/ZRobotics/posts/</loc>
     <lastmod>2025-09-12T03:25:53+08:00</lastmod>
   </url><url>
-    <loc>http://www.zrobotics.dpdns.org/tags/</loc>
+    <loc>http://localhost:1313/ZRobotics/tags/</loc>
     <lastmod>2025-09-12T03:25:53+08:00</lastmod>
   </url><url>
-    <loc>http://www.zrobotics.dpdns.org/</loc>
+    <loc>http://localhost:1313/ZRobotics/</loc>
     <lastmod>2025-09-12T03:25:53+08:00</lastmod>
   </url><url>
-    <loc>http://www.zrobotics.dpdns.org/categories/%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8/</loc>
+    <loc>http://localhost:1313/ZRobotics/categories/%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8/</loc>
     <lastmod>2025-09-12T03:25:53+08:00</lastmod>
   </url><url>
-    <loc>http://www.zrobotics.dpdns.org/posts/zmdr-use-guide/</loc>
+    <loc>http://localhost:1313/ZRobotics/posts/zmdr-use-guide/</loc>
     <lastmod>2025-09-12T03:25:53+08:00</lastmod>
   </url><url>
-    <loc>http://www.zrobotics.dpdns.org/tags/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/</loc>
+    <loc>http://localhost:1313/ZRobotics/tags/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2025-09-12T03:25:53+08:00</lastmod>
   </url><url>
-    <loc>http://www.zrobotics.dpdns.org/about/</loc>
+    <loc>http://localhost:1313/ZRobotics/about/</loc>
   </url><url>
-    <loc>http://www.zrobotics.dpdns.org/archives/</loc>
+    <loc>http://localhost:1313/ZRobotics/archives/</loc>
   </url><url>
-    <loc>http://www.zrobotics.dpdns.org/search/</loc>
+    <loc>http://localhost:1313/ZRobotics/search/</loc>
   </url>
 </urlset>
