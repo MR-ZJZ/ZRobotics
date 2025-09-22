@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工必利其器 on SonnyCalcr&#39;s Blog</title>
+    <link>http://localhost:1313/categories/%E5%B7%A5%E5%BF%85%E5%88%A9%E5%85%B6%E5%99%A8/</link>
+    <description>Recent content in 工必利其器 on SonnyCalcr&#39;s Blog</description>
+    <image>
+      <title>SonnyCalcr&#39;s Blog</title>
+      <url>https://i.postimg.cc/7hwBy7VS/calcr.png</url>
+      <link>https://i.postimg.cc/7hwBy7VS/calcr.png</link>
+    </image>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>zh</language>
+    <copyright>©2024 SonnyCalcr&amp;rsquo;s Blog</copyright>
+    <lastBuildDate>Fri, 16 Aug 2024 21:50:45 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E5%B7%A5%E5%BF%85%E5%88%A9%E5%85%B6%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>终端和 Shell 的使用之 Windows 篇</title>
+      <link>http://localhost:1313/posts/personal-likes-terminal-and-shell-in-windows/</link>
+      <pubDate>Fri, 16 Aug 2024 21:50:45 +0800</pubDate>
+      <guid>http://localhost:1313/posts/personal-likes-terminal-and-shell-in-windows/</guid>
+      <description>&lt;p&gt;这篇博客主要来聊一聊我在 Windows 端使用的终端和 Shell 软件。&lt;/p&gt;
+&lt;p&gt;按：本篇博客大致上只是一个提纲，更详细的内容和使用体验在我的 B 站视频中，毕竟这东西不如直接用视频的形式展示出来比较直观。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arch Linux Trying Hyprland</title>
+      <link>http://localhost:1313/posts/arch-linux-trying-hyprland/</link>
+      <pubDate>Sun, 11 Aug 2024 07:57:19 +0800</pubDate>
+      <guid>http://localhost:1313/posts/arch-linux-trying-hyprland/</guid>
+      <description>&lt;p&gt;几个月前也简单安装过 Hyprland，在 nixos 发行版上。只是由于当时时间不够，就没有怎么深入去配置，导致最终的使用体验其实比较糟糕。所以最终是放弃了体验。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Set Themes for Kitty</title>
+      <link>http://localhost:1313/posts/how-to-set-themes-for-kitty/</link>
+      <pubDate>Wed, 07 Aug 2024 01:45:10 +0800</pubDate>
+      <guid>http://localhost:1313/posts/how-to-set-themes-for-kitty/</guid>
+      <description>&lt;p&gt;如何给 Kitty 设置主题呢？这个问题其实很简单，因为像这样成熟的 terminal 模拟器，必然有人在网上已经整理好了相关的 themes，通常只需要我们去 clone 一下就可以使用了。Kitty 就是如此。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

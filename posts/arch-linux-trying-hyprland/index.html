@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Arch Linux Trying Hyprland | SonnyCalcr&#39;s Blog</title>
+<meta name="keywords" content="Linux, Bilibili, 软件开箱">
+<meta name="description" content="几个月前也简单安装过 Hyprland，在 nixos 发行版上。只是由于当时时间不够，就没有怎么深入去配置，导致最终的使用体验其实比较糟糕。所以最终是放弃了体验。">
+<meta name="author" content="Sonny Calcr">
+<link rel="canonical" href="http://localhost:1313/posts/arch-linux-trying-hyprland/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.31606b01ae31539001706d41fc833c993b1758dbed2a9d814f4563b7298aa9f6.css" integrity="sha256-MWBrAa4xU5ABcG1B/IM8mTsXWNvtKp2BT0VjtymKqfY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/favicon.png">
+<link rel="mask-icon" href="http://localhost:1313/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/posts/arch-linux-trying-hyprland/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+<meta property="og:url" content="http://localhost:1313/posts/arch-linux-trying-hyprland/">
+  <meta property="og:site_name" content="SonnyCalcr&#39;s Blog">
+  <meta property="og:title" content="Arch Linux Trying Hyprland">
+  <meta property="og:description" content="几个月前也简单安装过 Hyprland，在 nixos 发行版上。只是由于当时时间不够，就没有怎么深入去配置，导致最终的使用体验其实比较糟糕。所以最终是放弃了体验。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-11T07:57:19+08:00">
+    <meta property="article:modified_time" content="2024-08-11T07:57:19+08:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Bilibili">
+    <meta property="article:tag" content="软件开箱">
+      <meta property="og:image" content="https://i.postimg.cc/7hwBy7VS/calcr.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.postimg.cc/7hwBy7VS/calcr.png">
+<meta name="twitter:title" content="Arch Linux Trying Hyprland">
+<meta name="twitter:description" content="几个月前也简单安装过 Hyprland，在 nixos 发行版上。只是由于当时时间不够，就没有怎么深入去配置，导致最终的使用体验其实比较糟糕。所以最终是放弃了体验。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Arch Linux Trying Hyprland",
+      "item": "http://localhost:1313/posts/arch-linux-trying-hyprland/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Arch Linux Trying Hyprland",
+  "name": "Arch Linux Trying Hyprland",
+  "description": "几个月前也简单安装过 Hyprland，在 nixos 发行版上。只是由于当时时间不够，就没有怎么深入去配置，导致最终的使用体验其实比较糟糕。所以最终是放弃了体验。\n",
+  "keywords": [
+    "Linux", "Bilibili", "软件开箱"
+  ],
+  "articleBody": "几个月前也简单安装过 Hyprland，在 nixos 发行版上。只是由于当时时间不够，就没有怎么深入去配置，导致最终的使用体验其实比较糟糕。所以最终是放弃了体验。\n最近时间比较多，刚好我的 KDE 出了点问题，所以，直接重装，WM(Windows Manager) 也换成了 hyprland，最终的体验还行。这里就简单分享一些我认为简易配置一下就可以获得的体验。\n提前说一下我的个人建议：好看，但不推荐。目前有太多的问题。\n按：本文更多面向的是 CS 专业在读学生，如果是非 CS 专业，但是对 CS 感兴趣、有实践的同学，那就更加 perfect 了。\n基本的使用的效果 就是一些平铺效果，这个没什么好说的。\n高分屏的适配 按照默认的配置来，其实还行。\n基本的编程软件 Kitty fish Neovim Neovide VSCode starship 这几个体验起来其实还行，只有 VSCode 需要开启 wayland 的标志，不然，缩放很有问题。\n美化和主题 暗色模式很有问题。比如，使用 dolphin，起界面调起来有一番难度。整个系统想要调整成暗色模式也很有难度。\n常用的工具 ags，标题栏和一些小组件的美化和定制。 rofi，这里我使用的 wayland 的版本，rofi-wayland，但是有一个问题：不能输入中文。 fcitx5，大部分应用是可以正常使用的。 chrome，开启了 wayland 的 flag 之后，使用起来还行。 edge，和 chrome 类似。 firefox，如果缩小到屏幕的 1/32，那么，缩放会出问题。 telegram，很不稳定。启动的时间长，缩放有一定问题，输入法偶尔失灵。 obs-studio，这个录屏的软件还是挺好用的。 很多缺失的工具 比如，截图软件，其实没有好用的。\n总结 我个人给出的结论是，不推荐使用这个系统。我们在使用一个系统的时候，其实是有很多事情要做的，因此，必须要有足够多的软件来支持，这一点 KDE 就做得非常好，而 hyprland 毕竟是一个年轻的 WM，所以，它在很多方面都有欠缺，因此，如果要作为我们的主系统的话，那么，它是很不合适的。不过，如果，仅仅是用来编写代码的副操作系统，大家大可以尝试一番，它的理念，也就是平铺式桌面的里面是相当优秀的。\n之前(大概是前天)也是因为 KDE 的 chrome 浏览器会导致 fcitx5 卡死，才一气之下换到了 hyprland，现在发现问题好像可以解决了。KDE 中的 chrome 默认使用的 x11 协议，那么，换成 wayland 其实就可以解决输入法的问题了。\n",
+  "wordCount" : "906",
+  "inLanguage": "zh",
+  "image": "https://i.postimg.cc/7hwBy7VS/calcr.png","datePublished": "2024-08-11T07:57:19+08:00",
+  "dateModified": "2024-08-11T07:57:19+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sonny Calcr"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/arch-linux-trying-hyprland/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SonnyCalcr's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="SonnyCalcr&#39;s Blog (Alt + H)">SonnyCalcr&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="SonnyCalcr&#39;s Blog">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Arch Linux Trying Hyprland
+    </h1>
+    <div class="post-meta"><span title='2024-08-11 07:57:19 +0800 CST'>2024-08-11</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Sonny Calcr
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%9f%ba%e6%9c%ac%e7%9a%84%e4%bd%bf%e7%94%a8%e7%9a%84%e6%95%88%e6%9e%9c" aria-label="基本的使用的效果">基本的使用的效果</a></li>
+                <li>
+                    <a href="#%e9%ab%98%e5%88%86%e5%b1%8f%e7%9a%84%e9%80%82%e9%85%8d" aria-label="高分屏的适配">高分屏的适配</a></li>
+                <li>
+                    <a href="#%e5%9f%ba%e6%9c%ac%e7%9a%84%e7%bc%96%e7%a8%8b%e8%bd%af%e4%bb%b6" aria-label="基本的编程软件">基本的编程软件</a></li>
+                <li>
+                    <a href="#%e7%be%8e%e5%8c%96%e5%92%8c%e4%b8%bb%e9%a2%98" aria-label="美化和主题">美化和主题</a></li>
+                <li>
+                    <a href="#%e5%b8%b8%e7%94%a8%e7%9a%84%e5%b7%a5%e5%85%b7" aria-label="常用的工具">常用的工具</a></li>
+                <li>
+                    <a href="#%e5%be%88%e5%a4%9a%e7%bc%ba%e5%a4%b1%e7%9a%84%e5%b7%a5%e5%85%b7" aria-label="很多缺失的工具">很多缺失的工具</a></li>
+                <li>
+                    <a href="#%e6%80%bb%e7%bb%93" aria-label="总结">总结</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>几个月前也简单安装过 Hyprland，在 nixos 发行版上。只是由于当时时间不够，就没有怎么深入去配置，导致最终的使用体验其实比较糟糕。所以最终是放弃了体验。</p>
+<p>最近时间比较多，刚好我的 KDE 出了点问题，所以，直接重装，WM(Windows Manager) 也换成了 hyprland，最终的体验还行。这里就简单分享一些我认为简易配置一下就可以获得的体验。</p>
+<p>提前说一下我的个人建议：好看，但不推荐。目前有太多的问题。</p>
+<p>按：本文更多面向的是 CS 专业在读学生，如果是非 CS 专业，但是对 CS 感兴趣、有实践的同学，那就更加 perfect 了。</p>
+<h2 id="基本的使用的效果">基本的使用的效果<a hidden class="anchor" aria-hidden="true" href="#基本的使用的效果">#</a></h2>
+<p>就是一些平铺效果，这个没什么好说的。</p>
+<h2 id="高分屏的适配">高分屏的适配<a hidden class="anchor" aria-hidden="true" href="#高分屏的适配">#</a></h2>
+<p>按照默认的配置来，其实还行。</p>
+<h2 id="基本的编程软件">基本的编程软件<a hidden class="anchor" aria-hidden="true" href="#基本的编程软件">#</a></h2>
+<ul>
+<li>Kitty</li>
+<li>fish</li>
+<li>Neovim</li>
+<li>Neovide</li>
+<li>VSCode</li>
+<li>starship</li>
+</ul>
+<p>这几个体验起来其实还行，只有 VSCode 需要开启 wayland 的标志，不然，缩放很有问题。</p>
+<h2 id="美化和主题">美化和主题<a hidden class="anchor" aria-hidden="true" href="#美化和主题">#</a></h2>
+<p>暗色模式很有问题。比如，使用 dolphin，起界面调起来有一番难度。整个系统想要调整成暗色模式也很有难度。</p>
+<h2 id="常用的工具">常用的工具<a hidden class="anchor" aria-hidden="true" href="#常用的工具">#</a></h2>
+<ul>
+<li>ags，标题栏和一些小组件的美化和定制。</li>
+<li>rofi，这里我使用的 wayland 的版本，rofi-wayland，但是有一个问题：不能输入中文。</li>
+<li>fcitx5，大部分应用是可以正常使用的。</li>
+<li>chrome，开启了 wayland 的 flag 之后，使用起来还行。</li>
+<li>edge，和 chrome 类似。</li>
+<li>firefox，如果缩小到屏幕的 1/32，那么，缩放会出问题。</li>
+<li>telegram，很不稳定。启动的时间长，缩放有一定问题，输入法偶尔失灵。</li>
+<li>obs-studio，这个录屏的软件还是挺好用的。</li>
+</ul>
+<h2 id="很多缺失的工具">很多缺失的工具<a hidden class="anchor" aria-hidden="true" href="#很多缺失的工具">#</a></h2>
+<p>比如，截图软件，其实没有好用的。</p>
+<h2 id="总结">总结<a hidden class="anchor" aria-hidden="true" href="#总结">#</a></h2>
+<p>我个人给出的结论是，不推荐使用这个系统。我们在使用一个系统的时候，其实是有很多事情要做的，因此，必须要有足够多的软件来支持，这一点 KDE 就做得非常好，而 hyprland 毕竟是一个年轻的 WM，所以，它在很多方面都有欠缺，因此，如果要作为我们的主系统的话，那么，它是很不合适的。不过，如果，仅仅是用来编写代码的副操作系统，大家大可以尝试一番，它的理念，也就是平铺式桌面的里面是相当优秀的。</p>
+<p>之前(大概是前天)也是因为 KDE 的 chrome 浏览器会导致 fcitx5 卡死，才一气之下换到了 hyprland，现在发现问题好像可以解决了。KDE 中的 chrome 默认使用的 x11 协议，那么，换成 wayland 其实就可以解决输入法的问题了。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/linux/">Linux</a></li>
+      <li><a href="http://localhost:1313/tags/bilibili/">Bilibili</a></li>
+      <li><a href="http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E7%AE%B1/">软件开箱</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/personal-likes-terminal-and-shell-in-windows/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>终端和 Shell 的使用之 Windows 篇</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/how-to-set-themes-for-kitty/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>How to Set Themes for Kitty</span>
+  </a>
+</nav>
+
+  </footer><div id="tw-comment"></div>
+<script>
+    
+    const getStoredTheme = () => localStorage.getItem("pref-theme") === "light" ? "light" : "dark";
+    const setGiscusTheme = () => {
+        const sendMessage = (message) => {
+            const iframe = document.querySelector('iframe.giscus-frame');
+            if (iframe) {
+                iframe.contentWindow.postMessage({giscus: message}, 'https://giscus.app');
+            }
+        }
+        sendMessage({setConfig: {theme: getStoredTheme()}})
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const giscusAttributes = {
+            "src": "https://giscus.app/client.js",
+            "data-repo": "sonnycalcr\/sonnycalcr.github.io",
+            "data-repo-id": "R_kgDOMed_Fg",
+            "data-category": "Announcements",
+            "data-category-id": "DIC_kwDOMed_Fs4ChXJF",
+            "data-mapping": "pathname",
+            "data-strict": "0",
+            "data-reactions-enabled": "1",
+            "data-emit-metadata": "0",
+            "data-input-position": "bottom",
+            "data-theme": getStoredTheme(),
+            "data-lang": "zh-CN",
+            "data-loading": "lazy",
+            "crossorigin": "anonymous",
+        };
+
+        
+        const giscusScript = document.createElement("script");
+        Object.entries(giscusAttributes).forEach(
+                ([key, value]) => giscusScript.setAttribute(key, value));
+        document.querySelector("#tw-comment").appendChild(giscusScript);
+
+        
+        const themeSwitcher = document.querySelector("#theme-toggle");
+        if (themeSwitcher) {
+            themeSwitcher.addEventListener("click", setGiscusTheme);
+        }
+        const themeFloatSwitcher = document.querySelector("#theme-toggle-float");
+        if (themeFloatSwitcher) {
+            themeFloatSwitcher.addEventListener("click", setGiscusTheme);
+        }
+    });
+</script>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span><a href="https://sonnycalcr.github.io/">©2024 SonnyCalcr&rsquo;s Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js"
+  integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj+Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  var OSName = "unknown";
+  var navApp = navigator.userAgent.toLowerCase();
+  switch (true) {
+    case (navApp.indexOf("win") != -1):
+      OSName = "windows";
+      break;
+    case (navApp.indexOf("mac") != -1):
+      OSName = "apple";
+      break;
+    case (navApp.indexOf("linux") != -1):
+      OSName = "linux";
+      break;
+    case (navApp.indexOf("x11") != -1):
+      OSName = "unix";
+      break;
+  }
+
+  const images = Array.from(document.querySelectorAll(".post-content img"));
+  images.forEach(img => {
+    mediumZoom(img, {
+      margin: 1,    
+      
+      container: null,  
+      template: null,  
+      
+    });
+  });
+
+  if (OSName == "windows") {
+    document.body.className += ' win11'
+  }
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

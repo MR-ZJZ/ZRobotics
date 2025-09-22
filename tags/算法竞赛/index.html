@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>算法竞赛 | SonnyCalcr&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
+<meta name="author" content="Sonny Calcr">
+<link rel="canonical" href="http://localhost:1313/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.31606b01ae31539001706d41fc833c993b1758dbed2a9d814f4563b7298aa9f6.css" integrity="sha256-MWBrAa4xU5ABcG1B/IM8mTsXWNvtKp2BT0VjtymKqfY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/favicon.png">
+<link rel="mask-icon" href="http://localhost:1313/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/index.xml">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+<meta property="og:url" content="http://localhost:1313/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">
+  <meta property="og:site_name" content="SonnyCalcr&#39;s Blog">
+  <meta property="og:title" content="算法竞赛">
+  <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://i.postimg.cc/7hwBy7VS/calcr.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.postimg.cc/7hwBy7VS/calcr.png">
+<meta name="twitter:title" content="算法竞赛">
+<meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
+
+</head>
+
+<body class="list dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="SonnyCalcr&#39;s Blog (Alt + H)">SonnyCalcr&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="SonnyCalcr&#39;s Blog">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    算法竞赛
+    <a href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">UVa401 and UVa340
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>题意 https://onlinejudge.org/external/3/340.pdf https://onlinejudge.org/external/4/401.pdf 理解分析 这两道题比较直接，都是用字符数组来进行解决。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-06 23:46:19 +0800 CST'>2024-11-06</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to UVa401 and UVa340" href="http://localhost:1313/posts/uva401-and-uva340/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">UVa1025
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>题意理解 https://onlinejudge.org/external/10/1025.pdf
+这里要我们求的输出是：最少等待时间。什么是最少等待时间呢？就是在车站逗留的时间。
+解题思路 用 $d(i, j)$ 表示时刻 i，Mario 在车站 j 最少还需要等待多少时间。 边界条件是：$d(T, n) = 0$，表示在 T 时刻，Mario 已经在 n 站台了。其他的 d(T, i) 为正无穷。 对于其他的普通的情况，也就是 d(i, j)，可以有 3 种决策： 1、等 1 个时间单位 2、搭乘往右开的车(如果有) 3、搭乘往左开的车(如果有) 代码理解 这里状态转移方程比较直观，其实就是最内层的 for 循环中的处理过程。因为我们的边界条件是 T 时刻，所以，对于时刻 i，我们从 T - 1 开始遍历。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-04 19:13:46 +0800 CST'>2024-11-04</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to UVa1025" href="http://localhost:1313/posts/uva1025/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">UVa272 and UVa10082
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>这两道题是整本书中出现的第一道和第二道 UVa 的题目。
+https://onlinejudge.org/external/2/272.pdf https://onlinejudge.org/external/100/10082.pdf 先看 UVa272，这里需要注意两点，
+getchar =&gt; 这里之所以使用 getchar，是因为如果使用 scanf 来读取输入的话，那么，像 TAB、空格这样的字符就会被当成分隔符而无法读入； EOF 是什么？EOF 表示一个文件的结束，如果是读取一个文件，那么，读取到文件尾时，就会读取到 EOF。更详细的内容可以看：https://stackoverflow.com/questions/4358728/end-of-file-eof-in-c。我们在使用命令行的时候，可以使用 Ctrl &#43; D(在 Linux 系统下) 来手动触发 EOF。 额外说一句，第 46 页，
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-27 16:05:02 +0800 CST'>2024-10-27</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to UVa272 and UVa10082" href="http://localhost:1313/posts/uva272-and-uva10082/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">序言-更新计划-初衷-关于算法竞赛入门经典第二版
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>有网友问我关于我发布的算法竞赛入门经典(紫书)的更新计划，这里就简要说一下，顺便也可以作为这个系列的开篇/前言了。
+本来我的计划是，有时间就更，偶尔更，随机更。看到了感兴趣的题目或者随机抽一个就更一下。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-24 11:04:17 +0800 CST'>2024-10-24</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to 序言-更新计划-初衷-关于算法竞赛入门经典第二版" href="http://localhost:1313/posts/my-updating-plan-about-aoapc2nd/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">UVa524
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一道经典的算法题。链接：https://onlinejudge.org/external/5/524.pdf。
+这里的原题的描述，我们需要注意的只有输入和输出的格式那里，对于题意的理解，书中的中文描述已经足够了，因为题意是比较简单的。(这里可以去书上读一下题目的意思。)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-23 23:47:57 +0800 CST'>2024-10-23</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to UVa524" href="http://localhost:1313/posts/uva524/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">UVa572
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>本题较为简单。本来是想讲另外一道题目的(UVa12171，例题 6-18)，但是那道题目提到了 floodfill，那么，就先把这个 floodfill 这个知识点给讲了吧。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-05 07:44:47 +0800 CST'>2024-10-05</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to UVa572" href="http://localhost:1313/posts/uva572/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">《算法竞赛入门经典·第 2 版》的一些阅读小贴士
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前言 这篇博客是关于一些关于阅读《算法竞赛入门经典·第 2 版》的一些小贴士。
+老手自不必说，本博客针对的是刚接触这本书的一些新手。
+为什么要读这一本书？
+因为经典。首先作者的实力相当深厚，其次是选取的题目非常纯粹，都是 UVa 的题目，而我们也知道，UVa 的很多题目都是 acm 的原题，所以，题目的严谨性和质量有一定的保证，作为我们学习过程中的例题简直再合适不过。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-04 06:16:00 +0800 CST'>2024-10-04</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to 《算法竞赛入门经典·第 2 版》的一些阅读小贴士" href="http://localhost:1313/posts/some-tips-for-reading-aoapc-bac2nd/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">UVa442
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>UVa210 解题思路及代码解析</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-02 04:51:15 +0800 CST'>2024-10-02</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to UVa442" href="http://localhost:1313/posts/uva442/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">UVa514
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>《算法竞赛入门经典》(第二版) 第 6 章例题 6-2。
+题意 这一题的题面较短，其中英文原题也比较容易理解，所以，我们直接分析题意和代码。
+本题的题意是右边有一列火车向左开，一列火车可以有很多个车厢，单个车厢来到岔路口的时候，可以选择直接进入 B 轨道，也可以选择在 Station 里面暂存一下，但是 Station 相当于是一个 stack，所以，遵循后进先出的规则。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-20 20:07:54 +0800 CST'>2024-09-20</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to UVa514" href="http://localhost:1313/posts/uva514/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">UVa210
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>UVa210 解题思路及代码解析</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-05 08:44:44 +0800 CST'>2024-09-05</span>&nbsp;·&nbsp;8 分钟&nbsp;·&nbsp;Sonny Calcr</footer>
+  <a class="entry-link" aria-label="post link to UVa210" href="http://localhost:1313/posts/uva210/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://localhost:1313/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/page/2/">下一页&nbsp;2/2&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span><a href="https://sonnycalcr.github.io/">©2024 SonnyCalcr&rsquo;s Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js"
+  integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj+Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  var OSName = "unknown";
+  var navApp = navigator.userAgent.toLowerCase();
+  switch (true) {
+    case (navApp.indexOf("win") != -1):
+      OSName = "windows";
+      break;
+    case (navApp.indexOf("mac") != -1):
+      OSName = "apple";
+      break;
+    case (navApp.indexOf("linux") != -1):
+      OSName = "linux";
+      break;
+    case (navApp.indexOf("x11") != -1):
+      OSName = "unix";
+      break;
+  }
+
+  const images = Array.from(document.querySelectorAll(".post-content img"));
+  images.forEach(img => {
+    mediumZoom(img, {
+      margin: 1,    
+      
+      container: null,  
+      template: null,  
+      
+    });
+  });
+
+  if (OSName == "windows") {
+    document.body.className += ' win11'
+  }
+</script>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

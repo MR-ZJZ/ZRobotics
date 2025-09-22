@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>C on SonnyCalcr&#39;s Blog</title>
+    <link>http://localhost:1313/tags/c/</link>
+    <description>Recent content in C on SonnyCalcr&#39;s Blog</description>
+    <image>
+      <title>SonnyCalcr&#39;s Blog</title>
+      <url>https://i.postimg.cc/7hwBy7VS/calcr.png</url>
+      <link>https://i.postimg.cc/7hwBy7VS/calcr.png</link>
+    </image>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>zh</language>
+    <copyright>©2024 SonnyCalcr&amp;rsquo;s Blog</copyright>
+    <lastBuildDate>Fri, 25 Oct 2024 10:49:11 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 配置 VSCode &#43; CMake &#43; C/C&#43;&#43; 开发环境</title>
+      <link>http://localhost:1313/posts/configure-vscode-cmake-c-cpp-windows/</link>
+      <pubDate>Fri, 25 Oct 2024 10:49:11 +0800</pubDate>
+      <guid>http://localhost:1313/posts/configure-vscode-cmake-c-cpp-windows/</guid>
+      <description>&lt;p&gt;这里以 Windows11 为例。&lt;/p&gt;
+&lt;p&gt;这里只介绍比较通用的搭配：VSCode + 微软的 C/C++ 插件 + CMake 插件。虽然我平时更多用 clangd 和 Neovim。&lt;/p&gt;
+&lt;p&gt;这个可以写的东西不多，就直接看视频吧。&lt;/p&gt;
+&lt;p&gt;插件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C/C++&lt;/li&gt;
+&lt;li&gt;CMake Tools&lt;/li&gt;
+&lt;li&gt;CMake(LSP)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;首先，我们先手动地配置一个 C/C++ 项目。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux 配置 VSCode &#43; CMake &#43; C/C&#43;&#43; 开发环境</title>
+      <link>http://localhost:1313/posts/configure-vscode-cmake-c-cpp-linux/</link>
+      <pubDate>Fri, 25 Oct 2024 10:31:41 +0800</pubDate>
+      <guid>http://localhost:1313/posts/configure-vscode-cmake-c-cpp-linux/</guid>
+      <description>&lt;p&gt;这里以 Arch Linux 为例。&lt;/p&gt;
+&lt;p&gt;这里只介绍比较通用的搭配：VSCode + 微软的 C/C++ 插件 + CMake 插件。虽然我平时更多用 clangd 和 Neovim。&lt;/p&gt;
+&lt;p&gt;这个可以写的东西不多，就直接看视频吧。&lt;/p&gt;
+&lt;p&gt;插件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C/C++&lt;/li&gt;
+&lt;li&gt;CMake Tools&lt;/li&gt;
+&lt;li&gt;CMake(LSP)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;首先，我们先手动地配置一个 C/C++ 项目。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

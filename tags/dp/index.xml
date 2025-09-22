@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DP on SonnyCalcr&#39;s Blog</title>
+    <link>http://localhost:1313/tags/dp/</link>
+    <description>Recent content in DP on SonnyCalcr&#39;s Blog</description>
+    <image>
+      <title>SonnyCalcr&#39;s Blog</title>
+      <url>https://i.postimg.cc/7hwBy7VS/calcr.png</url>
+      <link>https://i.postimg.cc/7hwBy7VS/calcr.png</link>
+    </image>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>zh</language>
+    <copyright>©2024 SonnyCalcr&amp;rsquo;s Blog</copyright>
+    <lastBuildDate>Mon, 04 Nov 2024 19:13:46 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UVa1025</title>
+      <link>http://localhost:1313/posts/uva1025/</link>
+      <pubDate>Mon, 04 Nov 2024 19:13:46 +0800</pubDate>
+      <guid>http://localhost:1313/posts/uva1025/</guid>
+      <description>&lt;h2 id=&#34;题意理解&#34;&gt;题意理解&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://onlinejudge.org/external/10/1025.pdf&#34;&gt;https://onlinejudge.org/external/10/1025.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这里要我们求的输出是：最少等待时间。什么是最少等待时间呢？就是在车站逗留的时间。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;解题思路&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;用 $d(i, j)$ 表示时刻 i，Mario 在车站 j 最少还需要等待多少时间。&lt;/li&gt;
+&lt;li&gt;边界条件是：$d(T, n) = 0$，表示在 T 时刻，Mario 已经在 n 站台了。其他的 d(T, i) 为正无穷。&lt;/li&gt;
+&lt;li&gt;对于其他的普通的情况，也就是 d(i, j)，可以有 3 种决策：
+&lt;ul&gt;
+&lt;li&gt;1、等 1 个时间单位&lt;/li&gt;
+&lt;li&gt;2、搭乘往右开的车(如果有)&lt;/li&gt;
+&lt;li&gt;3、搭乘往左开的车(如果有)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;代码理解&#34;&gt;代码理解&lt;/h2&gt;
+&lt;p&gt;这里状态转移方程比较直观，其实就是最内层的 for 循环中的处理过程。因为我们的边界条件是 T 时刻，所以，对于时刻 i，我们从 T - 1 开始遍历。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
