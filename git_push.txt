@@ -1,9 +1,0 @@
-git init
-git rm -r --cached .
-git commit -m "clear repository"
-git pull
-git push origin main
-
-git add .
-git commit -m "first commit"
-git push -u origin main
