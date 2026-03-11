@@ -1,4 +1,10 @@
+git init
 git rm -r --cached .
 git commit -m "clear repository"
 git pull
 git push origin main
+
+git add .
+git commit -m "first commit"
+git branch -M master
+git push -u origin master
