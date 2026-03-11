@@ -1,0 +1,14 @@
+
+
+git rm -r --cached .
+git commit -m "clear repository"
+git push -f origin main
+
+git add .
+git commit -m "first commit"
+git push -f origin main
+
+git init
+git pull origin main --allow-unrelated-histories
+
+hugo --gc --minify -b "https://www.zrobotics.dpdns.org"
