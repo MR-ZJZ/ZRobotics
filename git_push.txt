@@ -1,0 +1,4 @@
+git rm -r --cached .
+git commit -m "clear repository"
+git pull
+git push origin main
